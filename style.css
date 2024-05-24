@@ -1,0 +1,721 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+
+}
+
+body{
+  margin: 0;
+    padding: 0;
+}
+
+
+
+.header {
+  background-color: #120c68;
+  height: 130px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 120px;
+  height: 120px;
+  line-height: 80px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin-right: 40px;
+}
+
+.nav-menu-item {
+  line-height: 80px;
+  width: max-content;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+ 
+  color: #83c5f7;
+  transition: 0.5s;
+}
+
+.nav-toggle {
+  display: none;
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  background-image: linear-gradient(to right, rgb(9, 9, 78), rgb(15, 14, 14));
+  color: white;
+  width: 100%;
+  padding: 50px 0;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-form, .contact-info {
+  flex: 1 1 45%;
+  margin: 10px;
+}
+
+.contact-form h3, .contact-info h4 {
+  margin-bottom: 20px;
+}
+
+.contact-form p, .contact-info ul, .contact-info p, .contact-info small {
+  margin-bottom: 10px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea, .contact-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #034574;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #022c4b;
+}
+
+.contact-info{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  color: white;
+}
+
+.contact-info ul li {
+  margin-bottom: 10px;
+}
+
+.contact-info ul li i {
+  margin-right: 10px;
+  font-size: 15px;
+  
+}
+
+.contact-info ul li i a{
+  color: white;
+  padding: 3px;
+  list-style: none;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .contact-form, .contact-info {
+      flex: 1 1 100%;
+      margin: 10px 0;
+  }
+}
+
+
+  
+  @media(min-width: 768px) {
+     
+      .contact-wrapper {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          
+      }
+      .contact-wrapper > * {
+          padding: 2em;
+      }
+
+
+      .contact-info ul,
+      .contact-info h4,
+      .contact-info p {
+          text-align: left;
+      }
+  }
+
+
+
+
+
+/* *********************************  */
+/* ADAPTANDO A MOBILE */
+
+@media (max-width: 671px){
+
+
+  /* Header */
+  .header{
+      background-color: #120c68;
+      height: 130px;
+      z-index: 1;
+      position: fixed;
+  }  
+
+  .logo img {
+    width: 120px;
+    height: 120px;
+    line-height: 80px;
+  }
+
+   .nav-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-image: linear-gradient(rgba(110, 110, 158, 0.8),rgba(0.3,0.5,0.8,8));
+      position: fixed;
+      top: 80px;
+      width: 100%;
+      padding: 20px 0;
+      height: calc(100% - 130px);
+      overflow-y: auto;
+      left: 100%;
+      height: 500px;
+      transition: left 0.3s;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+    
+      max-width: 992px;
+      margin: 0 auto;
+    }
+  
+    .nav-menu-item {
+      line-height: 70px;
+      font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+    }
+  
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+    
+      color: #83c5f7;
+      transition: 0.5s;
+    }
+  
+    .nav-toggle {
+      display: block;
+      color: white;
+      background: none;
+      border: none;
+      font-size: 30px;
+      padding: 0 20px;
+      line-height: 60px;
+      cursor: pointer;
+    }
+
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+   
+
+     /* Home page */
+
+.caja{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.imgEmpleo{
+  width: 300px;
+}
+
+/* Servicios */
+
+.servicios{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px;
+}
+
+.tituloServicios{
+  padding-left: 65px;
+  font-size: 2rem;
+  margin: 5px 5px 5px 5px;
+}
+
+.img2{
+  padding: 10px 15px 10px 65px;
+  width: 500px;
+  height: 300px;
+  border-radius: 7px;
+  float: left;
+}
+.parrafo{
+       
+  margin-top: 7px;
+  padding: 5px 20px 10px 20px;
+  font-size: 1.2rem;
+  width: 100%;
+  
+}
+
+/* Quienes somos */
+
+.caja-quienesSomos{
+  background-image: linear-gradient(to right , rgb(9, 9, 78), rgb(15, 14, 14));
+  margin-top: 150px;
+  color: white;
+  margin-bottom: 50px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.caja-quienesSomos p{
+  padding: 20px;
+  font-size: 1.1rem;
+}
+
+/* Slider de empresas */
+
+.slider{
+  width: 75vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 50px;
+}  
+
+.slider .slider-track{
+  display: flex;
+  animation: scroll 30s linear infinite;
+  -webkit-animation:scroll 30s linear infinite ;
+  width: calc(200px * 12);
+}
+
+.slide{
+  padding: 20px
+}
+
+
+@keyframes scroll {
+  0%{
+      -webkit-animation: translateX(0);
+      transform: translateX(0);
+    }
+    100%{
+       -webkit-animation: translateX(calc(-300px * 5));
+      transform: translateX(calc(-300px * 5));
+    }
+  
+}
+
+
+}
+
+
+/* ****************************** */
+/* ADAPTANDO A TABLET */
+
+@media (min-width: 672px) and (max-width:900px){
+  .header{
+    background-color: #120c68;
+    height: 130px;
+    width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+  }
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+
+
+  .logo img {
+    width: 120px;
+    height: 120px;
+    line-height: 80px;
+  }
+
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+
+  .nav-menu-item {
+    
+    
+    line-height: 80px;
+    
+    width: max-content;
+  }
+
+  .nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+  }
+
+
+  /* Home page */
+
+.caja{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tituloEmpleo{
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.imgEmpleo{
+    width: 300px;
+}
+
+/* Servicios */
+
+.servicios{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+}
+
+.tituloServicios{
+    padding-left: 65px;
+    font-size: 2rem;
+    margin: 5px 5px 5px 5px;
+}
+
+.img2{
+    padding: 10px 15px 10px 65px;
+    width: 500px;
+    height: 300px;
+    border-radius: 7px;
+    float: left;
+}
+.parrafo{
+         
+    margin-top: 7px;
+    padding: 5px 20px 10px 20px;
+    font-size: 1.2rem;
+    width: 100%;
+    
+}
+
+
+/* Quienes somos */
+
+.caja-quienesSomos{
+    background-image: linear-gradient(to right , rgb(9, 9, 78), rgb(15, 14, 14));
+    margin-top: 150px;
+    color: white;
+    margin-bottom: 50px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caja-quienesSomos p{
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
+
+/* Slider de empresas */
+
+.slider{
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 50px;
+}  
+
+.slider .slider-track{
+    display: flex;
+    animation: scroll 30s linear infinite;
+    -webkit-animation:scroll 30s linear infinite ;
+    width: calc(200px * 12);
+}
+
+.slide{
+    padding: 20px
+}
+
+
+@keyframes scroll {
+    0%{
+        -webkit-animation: translateX(0);
+        transform: translateX(0);
+      }
+      100%{
+         -webkit-animation: translateX(calc(-300px * 5));
+        transform: translateX(calc(-300px * 5));
+      }
+    
+}
+
+}
+
+
+
+/* ******************************************** */
+/* ADAPTANDO A PC */
+
+/* Header */
+
+@media (min-width: 900px){  
+
+
+.header{
+    background-color: #3c31dd;
+    height: 130px;
+    width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+  }
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+
+
+  .logo img {
+    width: 120px;
+    height: 120px;
+    line-height: 80px;
+  }
+
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+
+  .nav-menu-item {
+    
+    
+    line-height: 80px;
+    
+    width: max-content;
+  }
+
+  .nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+  }
+
+
+  /* Home page */
+
+.caja{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tituloEmpleo{
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.imgEmpleo{
+    width: 200px;
+    margin: 20px;
+}
+
+/* Servicios */
+
+.servicios{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+}
+
+.tituloServicios{
+    padding-left: 65px;
+    font-size: 2rem;
+    margin: 5px 5px 5px 5px;
+}
+
+.img2{
+    padding: 10px 15px 10px 65px;
+    width: 500px;
+    height: 300px;
+    border-radius: 7px;
+    float: left;
+}
+.parrafo{
+         
+    margin-top: 7px;
+    padding: 5px 20px 10px 20px;
+    font-size: 1.2rem;
+    width: 100%;
+    
+}
+
+
+/* Quienes somos */
+
+.caja-quienesSomos{
+    background-image: linear-gradient(to right , rgb(9, 9, 78), rgb(15, 14, 14));
+    margin-top: 150px;
+    color: white;
+    margin-bottom: 50px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caja-quienesSomos p{
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
+
+/* Slider de empresas */
+
+.slider{
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 50px;
+}  
+
+.slider .slider-track{
+    display: flex;
+    animation: scroll 30s linear infinite;
+    -webkit-animation:scroll 30s linear infinite ;
+    width: calc(200px * 12);
+}
+
+.slide{
+    padding: 20px
+}
+
+
+@keyframes scroll {
+    0%{
+        -webkit-animation: translateX(0);
+        transform: translateX(0);
+      }
+      100%{
+         -webkit-animation: translateX(calc(-300px * 5));
+        transform: translateX(calc(-300px * 5));
+      }
+    
+}
+
+}
+

@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Empleos IT</title> 
+        <title>Empleos IT</title>
+        <link rel="icon" href="img/favicon.ico"/> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <script src="https://kit.fontawesome.com/231b14a177.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
-        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <div>
         <!-- Header de navegacion -->
         <header class="header">
             <nav class="nav">
-              <a href="#" class="logo nav-link"><img src="imagenes/marba-logo-blanco (1).svg" alt=""></a>
+              <a href="#" class="logo nav-link"><img src="img/empleositlogo2.png" alt=""></a>
               <button class="nav-toggle" aria-label="Abrir menú">
                 <i class="fas fa-bars"></i>
               </button>
@@ -25,7 +27,7 @@
                   <a href="#quienesSomos" class="nav-menu-link nav-link">Quienes Somos</a>
                 </li>
                 <li class="nav-menu-item">
-                  <a href="#Empresas" class="nav-menu-link nav-link">Empresas </a>
+                  <a href="#empresas" class="nav-menu-link nav-link">Empresas </a>
                 </li>
                 <li class="nav-menu-item">
                   <a href="#contacto" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a>
@@ -39,9 +41,9 @@
           <!-- Imagen de fondo -->
           <div class="caja">
             <div class="imagen">
-              <img src="" class="img-fluid" alt="">
-              <h1  class="tituloEmpleo">Empleos IT</h1>
-              <button  type="button" id="btnMarba" class="btn btn-outline-primary d-block mx-auto "><a href="#contacto"
+              <img src="img/empleositlogo2.png" class="imgEmpleo img-fluid" alt="">
+              <!-- <h1  class="tituloEmpleo">Empleos IT</h1> -->
+              <button  type="button" id="boton" class="btn btn-outline-primary d-block mx-auto "><a href="#contacto"
                   class="text-decoration-none">Contactar</a> 
               </button>
             </div>
@@ -49,18 +51,18 @@
 
 
          <!-- Servicios -->
-         <section id="servicios" class="datos">
+         <div class="servicios">
+           <!-- <h1 class="tituloPrincipal">Servicios </h1> -->
+         <section class="datos">
             <h1  class="tituloServicios">Recopilacion de datos</h1>
-            <img  src="" class="img-fluid" alt="">
-            <p class="parrafo">Los profesionales que forman el equipo de TESLA, están capacitados para brindar soluciones integrales a proyectos sin límites de escala, con conocimiento sólidos en infraestructura de misión crítica.
-        
-              Nos comprometemos dar las más innovadoras soluciones en energía, climatización, construcción civil, detección y extinción de incendio, FO, cableado estructurado y monitoreo de variables ambientales para su datacenter, mantenibles. Podemos brindarle ayuda en todas las etapas de su proyecto IT. Desde el diseño conceptual hasta la ejecución de la obra de infraestructura que su empresa o cliente necesita. Ofrecemos servicios de mantenimiento preventivo y correctivo (7x24hs) sobre sus equipos de misión crítica.
+            <img  src="img/servicio1.jpg" class="img2 img-fluid" alt="">
+            <p class="parrafo">Conectamos profesionales con empresas en diversos sectores, ofreciendo trabajo en modalidad híbrida y remota para América Latinoamerica y Argentina.
             </p>
          </section>
 
          <section id="servicios" class="match">
             <h1  class="tituloServicios">Match con empresas</h1>
-            <img  src="" class="img-fluid" alt="">
+            <img  src="img/servicio2.jpg" class=" img2 img-fluid" alt="">
             <p class="parrafo">Los profesionales que forman el equipo de TESLA, están capacitados para brindar soluciones integrales a proyectos sin límites de escala, con conocimiento sólidos en infraestructura de misión crítica.
         
               Nos comprometemos dar las más innovadoras soluciones en energía, climatización, construcción civil, detección y extinción de incendio, FO, cableado estructurado y monitoreo de variables ambientales para su datacenter, mantenibles. Podemos brindarle ayuda en todas las etapas de su proyecto IT. Desde el diseño conceptual hasta la ejecución de la obra de infraestructura que su empresa o cliente necesita. Ofrecemos servicios de mantenimiento preventivo y correctivo (7x24hs) sobre sus equipos de misión crítica.
@@ -69,19 +71,20 @@
 
          <section id="servicios" class="asesoramiento">
             <h1  class="tituloServicios">Asesoramiento</h1>
-            <img  src="" class="img-fluid" alt="">
+            <img  src="img/servicio3.jpg" class="img2 img-fluid" alt="">
             <p class="parrafo">Los profesionales que forman el equipo de TESLA, están capacitados para brindar soluciones integrales a proyectos sin límites de escala, con conocimiento sólidos en infraestructura de misión crítica.
         
               Nos comprometemos dar las más innovadoras soluciones en energía, climatización, construcción civil, detección y extinción de incendio, FO, cableado estructurado y monitoreo de variables ambientales para su datacenter, mantenibles. Podemos brindarle ayuda en todas las etapas de su proyecto IT. Desde el diseño conceptual hasta la ejecución de la obra de infraestructura que su empresa o cliente necesita. Ofrecemos servicios de mantenimiento preventivo y correctivo (7x24hs) sobre sus equipos de misión crítica.
             </p>
          </section>
+        </div>
 
          <!-- Quienes somos -->
 
 
          <div  id="quienesSomos" class="caja-quienesSomos">
             <h1> Quienes somos</h1>
-            <p>Marba es una empresa de gran capital humano capacitado durante mas de 14 años en el rubro infraestructura eléctrica y termomecánica , con gran solidez en instalaciones de gran criticidad donde la falta de suministro no es una opción .
+            <p class="parrafoQuienesSomos">Marba es una empresa de gran capital humano capacitado durante mas de 14 años en el rubro infraestructura eléctrica y termomecánica , con gran solidez en instalaciones de gran criticidad donde la falta de suministro no es una opción .
               Una de nuestras premisas fundamentales es la capacitación de nuestro personal ya que entendemos que el avance constante de la tecnología nos obliga a estar en una búsqueda continua de conocimiento para estar a la altura de las necesidades de nuestros clientes. Contamos con la experiencia de haber dado respuesta a todas las dificultades y necesidades de nuestros clientes sin importar la complejidad ni la magnitud del problema. 
               Marba es una empresa pyme  con un origen de capital descentralizado , es una sociedad cooperativa , se maneja con el tipo de sistema de autoridad formal y según sus características su tamaño es de empresa mediana. 
             </p>
@@ -91,20 +94,24 @@
          
          <div id="empresas" class="container">
             <h2 class="text-center font-weight-bold"> Empresas</h2>
+           
+            <div class="customer-logos slider">
+             <div class="slider-track">
+             <div class="slide"><img src="img/slider1.png" alt=""></div>
+             <div class="slide"><img src="img/slider2.png" alt=""></div>
+             <div class="slide"><img src="img/slider3.png" alt=""></div>
+             <div class="slide"><img src="img/slider4.png" alt=""></div>
+             <div class="slide"><img src="img/slider5.png" alt=""></div>
+             <div class="slide"><img src="img/slider6.png" alt=""></div>
+             <div class="slide"><img src="img/slider7.png" alt=""></div>
+             <div class="slide"><img src="img/slider8.png" alt=""></div>
+             <div class="slide"><img src="img/slider9.png" alt=""></div>
+             <div class="slide"><img src="img/slider10.png" alt=""></div>
+             <div class="slide"><img src="img/slider11.png" alt=""></div>
+             <div class="slide"><img src="img/slider12.png" alt=""></div>
+
          
-            <section class="customer-logos slider">
-             <div class="slide"><img src="carpeta-logos/Logo_Movistar.svg.png" alt=""></div>
-             <div class="slide"><img src="carpeta-logos/1200px-Sancor_coop_logo.svg.png" alt=""></div>
-             <div class="slide"><img src="carpeta-logos/ANAC_logo.png" alt=""></div>
-             <div class="slide"><img src="carpeta-logos/Edesur_company_logo.png" alt=""></div>
-             <div class="slide"><img src="carpeta-logos/Logo_Molinos_-_Versiones_LogoMolinos_-_Wikipedia_-_301x188.png" alt=""></div>
-             <div class="slide"><img src="carpeta-logos/Logo_NIKE.svg.png" alt=""></div>
-             <div class="slide"><img src="carpeta-logos/logoArba.png" alt=""></div>
-             <div class="slide"><img src="carpeta-logos/logomatarazzo.png" alt=""></div>
-             <div class="slide"><img src="carpeta-logos/Telecom_arg_logo.png" alt=""></div>
-             <div class="slide"><img src="carpeta-logos/Telefe.png" alt=""></div>
-             <div class="slide"><img src="carpeta-logos/Telefónica.png" alt=""></div>
-             <div class="slide"><img src="carpeta-logos/Toyota-Logo-Transparent-Background.png" alt=""></div>
+            </div>
          
             </section>
              
@@ -113,70 +120,71 @@
          <!-- Footer con conctacto -->
 
          <footer>
-            <div id="contacto" class="content">
-        
-             <div class="contact-wrapper animated bounceInUp">
-                <div class="contact-form">
-                  <h3>Contacto</h3>
-                  <form action="">
-                    <p>
-                      <label>Nombre Completo
-                      </label>
-                      <input type="text" name="fullname">
-                    </p>
-                    <p>
-                      <label>Email
-                      </label>
-                      <input type="email" name="email">
-                    </p>
-                    <p>
-                      <label>Numero Telefonico</label>
-                      <input type="tel" name="phone">
-                    </p>
-                    <p>
-                      <label>Empresa</label>
-                      <input type="text" name="Empresa">
-                    </p>
-                    <p class="block">
-                      <label>Mensaje</label>
-                      <textarea name="message" rows="3"></textarea>
-                    </p>
-                    <p class="block">
-                      <button>
-                        Enviar
-                      </button>
-                    </p>
-                  </form>
-                </div>
-                <div class="contact-info">
-                  <h4>Mas Informacion</h4>
-                  <ul>
-                    <li>
-                      <i class="fas fa-map-marker-alt"></i>
-                      Laprida 4520 Villa Martelli 
-                    </li>
-                    <li>
-                      <i class="fas fa-phone"></i>
-                      (+54) 11 5139 9129
-                    </li>
-                    <li>
-                      <i class="fas fa-envelope-open-text"></i>
-                      marbasi@gmail.com
-                    </li>
-                  </ul>
-                  <p>Hacemos realidad su proyecto a travez de las mercaderias de gran calidad y habilidades de nuestro gran capital humano
-                    profesional.
-                  </p>
-                  <p>Marbasi.com</p>
-                  <small>&copy; 2022 <b>Uli</b> -Todos los Derechos Reservados</small>
-                </div>
+          <div id="contacto" class="content">
+              <div class="contact-wrapper animated bounceInUp">
+                  <div class="contact-form">
+                      <h3>Contacto</h3>
+                      <form action="">
+                          <p>
+                              <label>Nombre Completo</label>
+                              <input type="text" id="fullname" name="fullname">
+                          </p>
+                          <p>
+                              <label>Email</label>
+                              <input type="email" id="email" name="email">
+                          </p>
+                          <p>
+                              <label>Numero Telefonico</label>
+                              <input type="tel" id="phone" name="phone">
+                          </p>
+                          <p>
+                              <label>Empresa o Candidato</label>
+                              <select id="role" name="role">
+                                  <option value="empresa">Empresa</option>
+                                  <option value="candidato">Candidato</option>
+                                  <option value="candidato">Recrutier</option>
+                              </select>
+                          </p>
+                          <p class="block">
+                              <label>Mensaje</label>
+                              <textarea id="message" name="message" rows="3"></textarea>
+                          </p>
+                          <p class="block">
+                              <button>Enviar</button>
+                          </p>
+                      </form>
+                  </div>
+                  <div class="contact-info">
+                      <h4>Más Información</h4>
+                      <ul>
+                          <li>
+                            <i class="fa fa-instagram" aria-hidden="true"><a href="https://www.instagram.com/luidamedina/">EmpleoIT</a></i>
+                              
+                          </li>
+                          <li>
+                            <i class="fa fa-twitter" aria-hidden="true"><a href="">EmpleoIT</a></i>
+                          </li>
+                          <li>
+                            <i class="fa fa-facebook" aria-hidden="true"><a href="">EmpleoIT</a></i>
+
+                          </li>
+                      </ul>
+                      <p>Ayudamos a empresas y candidatos encontrando un match con su puesto soñado o el candidato ideal</p>
+                      <p>EmpleosIT.com</p>
+                      <small>&copy; 2024 <b>Luida</b> - Todos los Derechos Reservados</small>
+                  </div>
               </div>
-        
-            </div>
-        
-        
-          </footer>
+          </div>
+      </footer>
          
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+          integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+          crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
     </body>
 
 </html>
